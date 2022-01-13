@@ -3,12 +3,12 @@ import * as C from "./styles";
 import { Theme } from "../../components/theme";
 import { Link } from "react-router-dom";
 
-export function Sucessful() {
+export function NotFound() {
   return (
     <Theme>
       <C.Container>
-        <p>Conta Criada com Sucesso!</p>
-        <button><Link to="/login">Logar agora</Link></button>
+        <p>Página não encontrada</p>
+        <button><Link to="criar-conta">Voltar a página inicial</Link></button>
       </C.Container>
     </Theme>
   );

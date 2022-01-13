@@ -3,15 +3,17 @@ import { Login } from "./Pages/Login";
 import { CreateAccount } from "./Pages/CreateAccount";
 import { Sucessful } from "./Pages/Sucessful";
 import { Exit } from "./Pages/Exit";
+import { NotFound } from "./Pages/404";
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<Login/>} />
-        <Route path="/criarConta" element={<CreateAccount/>} />
-        <Route path="/cadastrar" element={<Sucessful/>} />
-        <Route path="/sair" element={<Exit/>} />
+        <Route exact path="/login"  element={<Login/>} />
+        <Route exact path="/criar-conta" element={<CreateAccount/>} />
+        <Route exact path="/sucesso" element={<Sucessful/>} />
+        <Route exact path="/sair" element={<Exit/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

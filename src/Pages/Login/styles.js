@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  span {
+  color: #edeff2;
+
+  p{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  a{
     color: #edeff2;
-    padding: 20px 0;
+    text-decoration: none;
   }
 
   input {
-    width: 100%;
+    width:94%;
     padding: 12px;
     font-size: 16px;
     border-width: 2px;
@@ -46,7 +54,6 @@ export const Container = styled.div`
     }
 
     :active {
-      .myButton {
         box-shadow: inset 0px 1px 0px 0px #97c4fe;
         background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
         background-color: #3d94f6;
@@ -71,5 +78,18 @@ export const Container = styled.div`
         top: 1px;
       }
     }
-  }
+`;
+
+export const FormData = styled.form`
+
+`;
+
+export const Entrada = styled.div`
+  padding: 8px 0;
+`;
+
+export const Enviar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
