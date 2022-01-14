@@ -8,7 +8,7 @@ export function NotFound() {
     <Theme>
       <C.Container>
         <p>Página não encontrada</p>
-        <button><Link to="criar-conta">Voltar a página inicial</Link></button>
+        <Link to="/">Voltar a página inicial</Link>
       </C.Container>
     </Theme>
   );

@@ -8,7 +8,7 @@ export function Sucessful() {
     <Theme>
       <C.Container>
         <p>Conta Criada com Sucesso!</p>
-        <button><Link to="/login">Logar agora</Link></button>
+        <Link to="/">Logar agora</Link>
       </C.Container>
     </Theme>
   );
