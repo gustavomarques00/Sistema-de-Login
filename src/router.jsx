@@ -4,6 +4,7 @@ import { CreateAccount } from "./Pages/CreateAccount";
 import { Sucessful } from "./Pages/Sucessful";
 import { Exit } from "./Pages/Exit";
 import { NotFound } from "./Pages/404";
+import { LostMyPassword } from "./Pages/LostMyPassword";
 
 export const Router = () => {
   return (
@@ -11,6 +12,7 @@ export const Router = () => {
       <Routes>
         <Route exact path="/"  element={<Login/>} />
         <Route exact path="/criar-conta" element={<CreateAccount/>} />
+        <Route exact path="/recuperar-senha" element={<LostMyPassword/>} />
         <Route exact path="/sucesso" element={<Sucessful/>} />
         <Route exact path="/sair" element={<Exit/>} />
         <Route path="*" element={<NotFound />} />

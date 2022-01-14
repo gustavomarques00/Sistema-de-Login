@@ -73,6 +73,7 @@ export function Login() {
         <C.Button onClick={logout} deslogar>
           Deslogar
         </C.Button>
+        {/*<Link to="/recuperar-senha">Esqueci minha senha</Link>*/}
       </C.Container>
     </Theme>
   );
