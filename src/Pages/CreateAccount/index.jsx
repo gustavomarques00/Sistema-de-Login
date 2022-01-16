@@ -13,6 +13,10 @@ const SchemaDeValidacao = Yup.object().shape({
     .min(5, "Senha muito pequena!")
     .max(50, "Senha excessivamente grande!")
     .required("Obrigatório"),
+  confirmacaoSenha: Yup.string().oneOf(
+    [Yup.ref("senha"), null],
+    "Senhas não são iguais"
+  ),
 });
 
 export function CreateAccount() {
@@ -27,6 +31,7 @@ export function CreateAccount() {
           initialValues={{
             email: "",
             senha: "",
+            confirmacaoSenha: "",
           }}
           onSubmit={async (values) => {
             try {
@@ -39,7 +44,6 @@ export function CreateAccount() {
             } catch (erro) {
               alert(erro.message);
             }
-
           }}
         >
           {({ errors, touched }) => (
@@ -56,6 +60,18 @@ export function CreateAccount() {
                 <Field id="senha" type="password" name="senha" required />
                 {errors.senha && touched.senha ? (
                   <C.Erro>{errors.senha}</C.Erro>
+                ) : null}
+              </C.Entrada>
+              <C.Entrada>
+                <label htmlFor="confirmacaoSenha">Confirmar Senha</label>
+                <Field
+                  id="confirmacaoSenha"
+                  type="password"
+                  name="confirmacaoSenha"
+                  required
+                />
+                {errors.confirmacaoSenha && touched.confirmacaoSenha ? (
+                  <C.Erro>{errors.confirmacaoSenha}</C.Erro>
                 ) : null}
               </C.Entrada>
               <C.Enviar>
