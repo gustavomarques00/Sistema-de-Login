@@ -71,7 +71,7 @@ export function Login() {
           </C.Enviar>
         </C.FormData>
         <C.Button onClick={logout} deslogar>
-          Deslogar
+          Sair
         </C.Button>
         {/*<Link to="/recuperar-senha">Esqueci minha senha</Link>*/}
       </C.Container>

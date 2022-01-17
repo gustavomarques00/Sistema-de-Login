@@ -15,9 +15,20 @@ export const Container = styled.div`
   a{
     color: #edeff2;
     text-decoration: none;
-    text-align: center;
   }
+
+  hr{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  
 `;
+
+export const Divisor = styled.div`
+  display: flex;
+  justify-content: space-around;
+`
 
 export const Button = styled.button`
   margin-top: 12px;

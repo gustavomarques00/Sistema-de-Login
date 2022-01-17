@@ -76,7 +76,7 @@ export function CreateAccount() {
               </C.Entrada>
               <C.Enviar>
                 <button type="submit">Criar</button>
-                <Link to="/">Voltar ao Login</Link>
+                <Link to="/login">Voltar ao Login</Link>
               </C.Enviar>
             </Form>
           )}

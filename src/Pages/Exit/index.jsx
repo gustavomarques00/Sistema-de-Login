@@ -8,7 +8,7 @@ export function Exit() {
     <Theme>
       <C.Container>
         <p>Obrigado por usar o nosso sistema!</p>
-        <Link to="/">Voltar ao início</Link>
+        <Link to="/"><C.Button>Voltar ao início</C.Button></Link>
       </C.Container>
     </Theme>
   );

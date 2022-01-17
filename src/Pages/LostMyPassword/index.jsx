@@ -17,7 +17,6 @@ export function LostMyPassword() {
               type="text"
               onBlur={(e) => {
                 setEmail(e.target.value);
-                console.log(email)
               }}
               required
               alt="Email"
@@ -25,7 +24,7 @@ export function LostMyPassword() {
           </C.Entrada>
           <C.Enviar>
             <C.Button>Recuperar senha</C.Button>
-            <Link to="/">Voltar a tela de Login</Link>
+            <Link to="/login">Voltar a tela de Login</Link>
           </C.Enviar>
         </C.FormData>
       </C.Container>
